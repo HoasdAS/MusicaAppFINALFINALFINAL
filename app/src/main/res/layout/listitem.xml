@@ -1,7 +1,22 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="vertical"> //list
+<LinearLayout
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="horizontal"> //image
+
+    <ImageView
+        android:id="@+id/musicart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@android:drawable/ic_media_previous" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
     <TextView
         android:id="@+id/displayname"
@@ -11,12 +26,12 @@
         android:ellipsize="end"
         android:singleLine="true"
         android:textSize="18dip"
-        android:textStyle="bold" />
+        android:textStyle="bold" /> //names
 
-    <LinearLayout
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
 
         <TextView
             android:id="@+id/title"
@@ -37,7 +52,8 @@
             android:gravity="right"
             android:singleLine="true"
             android:textSize="15dip" />
+        </LinearLayout>
     </LinearLayout>
-
+</LinearLayout>
 
 </LinearLayout>
